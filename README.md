@@ -24,7 +24,7 @@ docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d
 docker exec -i docker_marketplace_1 bash -c "bundle exec rake db:create"
 ```
 
-- If you have a .sql backup, paste it under [db_backups](https://github.com/Fluidchains/MarketplaceDocker/Docker/db_backups) folder and run (Change variables ``_user``,``_database`` and ``_dbfile`` to your real data):
+- If you have a .sql backup, paste it under [db_backups](https://github.com/FluidChains/MarketplaceDocker/tree/master/Docker/db_backups) folder and run (Change variables ``_user``,``_database`` and ``_dbfile`` to your real data):
 ```bash
 docker exec -i docker_db_marketplace_1 bash -c "psql -U {_user} -d {_database} {_dbfile}"
 ``` 
